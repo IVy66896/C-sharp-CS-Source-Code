@@ -1,0 +1,20 @@
+CREATE TABLE [Record] (
+	[Id] integer COLLATE BINARY NOT NULL PRIMARY KEY AUTOINCREMENT, 
+	[CaseName] text COLLATE BINARY, 
+	[RocID] text COLLATE BINARY, 
+	[Birthday] text COLLATE BINARY, 
+	[ParentRocID] text COLLATE BINARY, 
+	[BirthSeq] integer COLLATE BINARY, 
+	[Tel] text COLLATE BINARY, 
+	[Address] text COLLATE BINARY, 
+	[VaccineCode] text COLLATE BINARY NOT NULL, 
+	[InoculationDate] text COLLATE BINARY NOT NULL, 
+	[VaccineNo] text COLLATE BINARY NOT NULL, 
+	[VaccBatchNo] text COLLATE BINARY NOT NULL, 
+	[CreateDate] datetime COLLATE BINARY NOT NULL DEFAULT (DATETIME(CURRENT_TIMESTAMP, 'LOCALTIME')), 
+	[IsFlu] integer COLLATE BINARY NOT NULL DEFAULT 0, 
+	[AgencyCode] text COLLATE BINARY NOT NULL DEFAULT '', 
+	[Sex] text COLLATE BINARY NOT NULL DEFAULT 'M', 
+	[ExportedDate] text COLLATE BINARY, 
+	[LogicDel] integer COLLATE BINARY DEFAULT 0
+)
