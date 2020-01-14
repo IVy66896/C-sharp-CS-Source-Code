@@ -1,0 +1,3 @@
+CREATE TABLE [NIISOL_SysParam] (
+	[DBSchemaVersion] integer COLLATE BINARY NOT NULL PRIMARY KEY
+)
